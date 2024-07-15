@@ -28,7 +28,7 @@ void rotinaControladorDiscreto(){
   uk = uk*0.01;
 
   if (uk>=255){
-    analogWrite(ENA, 120);
+    analogWrite(ENA, 255);
   }
   else{
     analogWrite(ENA, uk);
