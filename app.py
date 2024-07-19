@@ -9,7 +9,7 @@ baud_rate = 115200  # Taxa de baud do Arduino, ajuste conforme necessário
 arduino = serial.Serial(porta_serial, baud_rate, timeout=1)
 
 # Abre o arquivo CSV para escrita
-with open("dados_PWM_e_RPM2.csv", mode="w", newline="") as arquivo_csv:
+with open("dados_PWM_e_RPM_sat.csv", mode="w", newline="") as arquivo_csv:
     csv_writer = csv.writer(arquivo_csv)
     csv_writer.writerow(["PWM", "RPM"])
 
